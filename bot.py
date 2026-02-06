@@ -57,11 +57,6 @@ async def set_profile(message: types.Message, state: FSMContext):
 
 @dp.message(ProfileStates.weight)
 async def process_weight(message: types.Message, state: FSMContext):
-    if message.text.startswith("/"):
-        await state.clear()
-        await message.answer("Окей, ввод еды отменен. Слушаю твои команды.")
-        return
-
     try:
         await state.update_data(weight=float(message.text))
         await message.answer("Теперь твой рост (см)?")
