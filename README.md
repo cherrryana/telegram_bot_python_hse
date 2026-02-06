@@ -2,19 +2,21 @@
 
 ## Установка и запуск
 
-1. Клонируем репозитрий:
+1. Клонируем репозитрий
     ```bash
     git clone https://github.com/username/project-name.git
     ```
 
-2. Устанавливаем зависимости:
+2. Устанавливаем зависимости
     ```bash
     pip install -r requirements.txt
     ```
 
-3. Создаем файл .env в корне и прописываем параметры:
-   BOT_TOKEN=ваш_токен_бота
-   WEATHER_API_KEY=ваш_ключ_openweathermap
+3. Создаем файл .env в корне и прописываем параметры
+    ```
+    BOT_TOKEN=ваш_токен_бота
+    WEATHER_API_KEY=ваш_ключ_openweathermap
+    ```
 
 4. Запускаем приложение!
     ```bash
