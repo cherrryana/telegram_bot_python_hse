@@ -28,7 +28,7 @@ class FoodStates(StatesGroup):
 async def cmd_start(message: types.Message):
     await message.answer(
         "Привет! Я бот, который поможет тебе следить за водой и калориями!\n\n"
-        "Сначала давай настроим твой профиль: /set_profile"
+        "Сначала давай настроим твой профиль: /set_profile\n"
         "Список всех команд: /help"
     )
 
